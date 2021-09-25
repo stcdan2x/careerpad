@@ -1,28 +1,36 @@
 {
-  "name": "careerpad",
-  "version": "1.0.0",
-  "description": "Social connections app",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stcdan2x/careerpad.git"
-  },
-  "author": "Steven Dandan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stcdan2x/careerpad/issues"
-  },
-  "homepage": "https://github.com/stcdan2x/careerpad#readme",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.7",
-    "passport": "^0.5.0",
-    "passport-jwt": "^4.0.0",
-    "validator": "^13.6.0"
-  }
+	"name": "careerpad",
+	"version": "1.0.0",
+	"description": "Social connections app",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"start": "node server/server",
+		"server": "nodemon server/server",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/stcdan2x/careerpad.git"
+	},
+	"author": "Steven Dandan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/stcdan2x/careerpad/issues"
+	},
+	"homepage": "https://github.com/stcdan2x/careerpad#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.7",
+		"morgan": "^1.10.0",
+		"passport": "^0.5.0",
+		"passport-jwt": "^4.0.0",
+		"validator": "^13.6.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.13"
+	}
 }
