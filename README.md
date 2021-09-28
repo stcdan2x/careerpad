@@ -1,6 +1,6 @@
 # Career Pad (Company Internal Social network)
 
-This is a Project app for connecting to Github API and also refactoring old React class based components into functional components with hooks and context. Will be written first in old-style react class based components and will be refactored later with functional components with hooks.
+This is an old project completed using the old React class based components and Redux. Will be written first in the original old-style react class based components and will be refactored later with functional components with hooks.
 
 Career Pad
 
@@ -14,4 +14,4 @@ Features to be added:
    etc..
 
 Technologies to be used:
-HTML, CSS, Javascript, React.js, Redux, Context API, Node.js, Express.js, MongoDB Atlas, etc.
+HTML, CSS, Javascript, React.js, Redux, Node.js, Express.js, MongoDB Atlas, etc.
