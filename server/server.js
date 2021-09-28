@@ -5,12 +5,19 @@ import morgan from "morgan";
 import userRouter from "./routers/userRouter.js";
 import profileRouter from "./routers/profileRouter.js";
 import postRouter from "./routers/postRouter.js";
+import passport from "passport";
+import pass from "./config/passport.js";
 
 dotenv.config();
 connectDB();
 const app = express();
 
 app.use(express.json()); //added for body parsing etc.
+
+//Passport middleware
+app.use(passport.initialize());
+// Passport Config
+pass(passport);
 
 if (process.env.NODE_ENV === "development") {
 	app.use(morgan("dev"));
